@@ -17,11 +17,11 @@
   become: true
     #  vars:
     #    user_name: ganeshhp
-  tasks:
-    - name: create and manage users
-      user:
-          name: "{{ user_name }}" 
-          state: present
+    #  tasks:
+    #- name: create and manage users
+    #  user:
+    #      name: "{{ user_name }}" 
+    #      state: present
 
 
 

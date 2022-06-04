@@ -18,3 +18,5 @@
       notify:
         - restart_webservice
 
+    - include: user.yml
+
