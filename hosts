@@ -19,7 +19,7 @@
 
 [appserver]
 
-172.31.5.39
+172.31.12.68
 
 
 [master:children]
