@@ -9,6 +9,7 @@
 #   - A hostname/ip can be a member of multiple groups
 
 # Ex 1: Ungrouped hosts, specify before any group headers:
+localhost
 
 172.31.8.161
 172.31.5.39
