@@ -12,6 +12,9 @@
   - name: download package from artifactory server
     command: 'curl -uuser1:APe8TNpyXKCb8VLuunDCEJcab2 -O -L "https://ganeshpalnitkar.jfrog.io/artifactory/Helloworldapp-repo/petclinic.war"'
 
+- hosts: appservers
+  remote_user:
+  tasks:
   - name: deploy war file to server
     copy: 
       src: './petclinic.war'
