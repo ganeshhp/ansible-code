@@ -9,15 +9,15 @@
   tasks:
     - name: manage package
       yum:
-          name: "{{ package_name }}" 
+          name: "{{package_name}}" 
           state: present
           use_backend: dnf
     - name: manage service
       service:
-          name: "{{ service_name }}"
+          name: "{{service_name}}"
           state: started 
     - name: deploy site
       copy:
           src: index.html
-          dest: "{{ doc_root }}"/index.html
+          dest: "{{doc_root}}"/index.html
 
