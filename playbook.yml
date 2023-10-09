@@ -19,5 +19,5 @@
     - name: deploy site
       copy:
           src: index.html
-          dest: "{{doc_root}}"/index.html
+          dest: "{{doc_root}}"
 
