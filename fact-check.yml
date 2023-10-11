@@ -1,0 +1,3 @@
+- name: gather facts and check
+  hosts: all
+  gather_facts: true
