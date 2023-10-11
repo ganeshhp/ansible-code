@@ -22,4 +22,4 @@
     - name: manage users
       user:
            name: "{{username}}"
-           state: present
+           state: absent
