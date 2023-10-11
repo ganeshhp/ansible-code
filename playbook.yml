@@ -7,11 +7,11 @@
   connection: local
   become: true
   tasks:
-    - name: manage package
-      yum:
-          name: "{{package_name}}" 
-          state: present
-          use_backend: yum3
+#    - name: manage package
+#      yum:
+#          name: "{{package_name}}" 
+#          state: present
+#          use_backend: yum3
     - name: manage service
       service:
           name: "{{service_name}}"
