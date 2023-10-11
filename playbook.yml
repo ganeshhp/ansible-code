@@ -20,6 +20,6 @@
            clone: yes
            update: yes
     - name: manage users
-      users:
+      user:
            name: "{{username}}"
            state: present
