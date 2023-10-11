@@ -16,8 +16,8 @@
     - name: clone repo
       git:
            repo: 'https://github.com/ganeshhp/ansible-code.git'
-           dest: /home/user/checkout
-           clone: yes
+           dest: /home/user/checkout/
+           clone: no
            update: yes
     - name: manage users
       user:
