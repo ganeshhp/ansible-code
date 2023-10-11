@@ -1,4 +1,4 @@
 - name: gather facts and check
   hosts: localhost
   gather_facts: true
----
+
