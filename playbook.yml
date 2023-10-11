@@ -10,7 +10,11 @@
     - name: collect facts
       setup:
            filter: ansible_distribution
-
+    - name: deploy file
+      copy:
+           src: index.html
+           dest: ~/.
+           
 #    - name: manage package
 #      yum:
 #          name: "{{package_name}}" 
