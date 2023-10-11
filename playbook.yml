@@ -1,9 +1,9 @@
 ---
 
 - name: manage webserver
-  hosts: localhost
-  gather_facts: false
-  remote_user: vagrant
+  hosts: all
+  gather_facts: true
+  remote_user: user
   connection: local
   become: true
   tasks:
