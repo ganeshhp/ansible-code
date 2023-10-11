@@ -16,7 +16,7 @@
     - name: clone repo
       git:
            repo: 'https://github.com/ganeshhp/ansible-code.git'
-           dest: /home/user/ansible/
+           dest: /home/user/checkout
            clone: yes
            update: yes
            
