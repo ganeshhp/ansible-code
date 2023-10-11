@@ -11,12 +11,15 @@
            filter: ansible_distribution
     - name: deploy file
       copy:
-           src: index.html
-           dest: /home/user/.
+           src: "{{site_file}}"
+           dest: "{{target_folder}}"
     - name: clone repo
       git:
            repo: 'https://github.com/ganeshhp/ansible-code.git'
            dest: /home/user/checkout
            clone: yes
            update: yes
-           
+    - name: manage users
+      users:
+           name: "{{username}}"
+           state: present
