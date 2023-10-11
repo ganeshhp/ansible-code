@@ -11,6 +11,7 @@
       yum:
           name: "{{package_name}}" 
           state: present
+      use_backend: yum
     - name: manage service
       service:
           name: "{{service_name}}"
