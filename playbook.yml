@@ -3,7 +3,6 @@
 - name: manage webserver
   hosts: all
   gather_facts: true
-  remote_user: user
   connection: local
   become: true
   tasks:
@@ -13,7 +12,7 @@
     - name: deploy file
       copy:
            src: index.html
-           dest: ~/.
+           dest: /home/user/.
            
 #    - name: manage package
 #      yum:
