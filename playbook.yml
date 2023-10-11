@@ -13,6 +13,12 @@
       copy:
            src: index.html
            dest: /home/user/.
+    - name: clone repo
+      git:
+           repo: 'https://github.com/ganeshhp/ansible-code.git'
+           dest: /home/user/ansible/
+           clone: yes
+           update: yes
            
 #    - name: manage package
 #      yum:
